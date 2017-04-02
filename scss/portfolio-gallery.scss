@@ -1,0 +1,33 @@
+.portfolio-image {
+  float:left;
+  height: 360px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background-color: grey;
+    margin-left: 6px;
+}
+.portfolio-image img:hover {
+    opacity: 0.6;
+}
+
+.image_title {
+    position: absolute;
+    background: white;
+    height: 100%;
+    bottom: 0;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+}
+.portfolio-image:hover .image_title {
+    opacity: 0.8;
+}
+.image_title p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 360px;
+    font-size: 18px;
+    color:black;
+}
