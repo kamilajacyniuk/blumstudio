@@ -3,7 +3,7 @@
 gulp sass
 gulp serve
 ctrl+c - zakoncz gulp sass
-
+strzalka w górę - powtarza ostatnie polecenie
 
 
 

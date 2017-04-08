@@ -27,6 +27,7 @@ gulp.task('serve', ['sass'], function(){
     server:dir
   });
 
-  gulp.watch(dir+'/scss/*.scss',['sass']);
-  gulp.watch(dir+"/*.html").on('change',browserSync.reload);
+  gulp.watch([dir+'/**/scss/*.scss', '!'+dir+'/node_modules', '!'+dir+'git'],['sass']);
+  gulp.watch([dir+"/**/*.html", '!'+dir+'/node_modules', '!'+dir+'git'])
+    .on('change',browserSync.reload);
 })

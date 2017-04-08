@@ -10,12 +10,14 @@
 @import "../office/scss/style.scss";
 
 
+
 *{
   box-sizing: border-box;
   margin: 0 auto;
-  font: 20px Arial;
 }
-
+body {
+    font-family: 'Lato', sans-serif;
+}
 .grid-container{
   margin: 0 auto;
   width: 100%;

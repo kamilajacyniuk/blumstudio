@@ -1,11 +1,11 @@
 .portfolio-image {
   float:left;
-  height: 360px;
+  height: 266px;
     display: block;
     overflow: hidden;
     position: relative;
     background-color: grey;
-    margin-left: 6px;
+    margin-left: 12px;
 }
 .portfolio-image img:hover {
     opacity: 0.6;
@@ -27,7 +27,7 @@
     position: absolute;
     width: 100%;
     text-align: center;
-    line-height: 360px;
+    line-height: 266px;
     font-size: 18px;
     color:black;
 }

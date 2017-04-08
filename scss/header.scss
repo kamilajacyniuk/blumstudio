@@ -7,17 +7,22 @@
     list-style: none;
     overflow: hidden;
     float: right;
-    li {
+    >li {
         float: left;
-        line-height: 70px;
-        a {
-            text-decoration: none;
-            color: grey;
-            font-size: 18px;
-            padding-left: 40px;
+
+        padding-left: 75px;
+        &:first-child{
+          padding-left: 0;
         }
-        a:hover {
+        >a {
+          line-height: 70px;
+            text-decoration: none;
             color: black;
+            font-size: 16px;
+
+        }
+        >a:hover {
+            color: grey;
         }
     }
 }
@@ -29,22 +34,32 @@
         text-decoration: none;
         color: black;
         font-weight: bold;
+        font-size:18px;
+        text-transform: uppercase;
+    }
+    a:hover {
+        color: grey;
     }
 }
 .menu-vertical {
     display: none;
     position: absolute;
     z-index: 10;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.6);
     padding-left: 4px;
     padding-right: 4px;
     padding-bottom: 6px;
-    a {
+    >a {
+      text-decoration: none;
+      padding-bottom: 4px;
         display: block;
-        font-size: 18px;
+        font-size: 16px;
         text-align: left;
-        padding-top: 10px;
+        padding-top: 2px;
         color: black;
+    }
+    a:hover{
+      color:grey;
     }
 }
 .menu-horizontal li:hover .menu-vertical {

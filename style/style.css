@@ -241,20 +241,24 @@ input[type=button] {
   float: right;
 }
 
-.menu-horizontal li {
+.menu-horizontal > li {
   float: left;
+  padding-left: 75px;
+}
+
+.menu-horizontal > li:first-child {
+  padding-left: 0;
+}
+
+.menu-horizontal > li > a {
   line-height: 70px;
-}
-
-.menu-horizontal li a {
   text-decoration: none;
-  color: grey;
-  font-size: 18px;
-  padding-left: 40px;
+  color: black;
+  font-size: 16px;
 }
 
-.menu-horizontal li a:hover {
-  color: black;
+.menu-horizontal > li > a:hover {
+  color: grey;
 }
 
 .box-left {
@@ -267,24 +271,36 @@ input[type=button] {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.box-left a:hover {
+  color: grey;
 }
 
 .menu-vertical {
   display: none;
   position: absolute;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.6);
   padding-left: 4px;
   padding-right: 4px;
   padding-bottom: 6px;
 }
 
-.menu-vertical a {
+.menu-vertical > a {
+  text-decoration: none;
+  padding-bottom: 4px;
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
-  padding-top: 10px;
+  padding-top: 2px;
   color: black;
+}
+
+.menu-vertical a:hover {
+  color: grey;
 }
 
 .menu-horizontal li:hover .menu-vertical {
@@ -295,8 +311,9 @@ input[type=button] {
   display: flex;
   flex-direction: row;
   flex-flow: row wrap;
-  margin-bottom: 6px;
-  margin-left: -18px;
+  margin-bottom: 12px;
+  margin-left: -36px;
+  width: 1437px;
 }
 
 .row:before, .row:after {
@@ -307,12 +324,12 @@ input[type=button] {
 
 .portfolio-image {
   float: left;
-  height: 360px;
+  height: 266px;
   display: block;
   overflow: hidden;
   position: relative;
   background-color: grey;
-  margin-left: 6px;
+  margin-left: 12px;
 }
 
 .portfolio-image img:hover {
@@ -337,7 +354,7 @@ input[type=button] {
   position: absolute;
   width: 100%;
   text-align: center;
-  line-height: 360px;
+  line-height: 266px;
   font-size: 18px;
   color: black;
 }
@@ -350,7 +367,7 @@ input[type=button] {
 
 #project-description {
   height: 800px;
-  background-color: yellow;
+  background-color: blue;
   float: right;
 }
 
@@ -358,18 +375,22 @@ input[type=button] {
   height: 800px;
   background-color: lightgrey;
   float: left;
+  margin-left: 36px;
 }
 
 #office-description {
   height: 800px;
-  background-color: yellow;
+  background-color: red;
   float: right;
 }
 
 * {
   box-sizing: border-box;
   margin: 0 auto;
-  font: 20px Arial;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
 }
 
 .grid-container {
