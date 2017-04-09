@@ -2,7 +2,7 @@ var gulp=require('gulp');
 var sass=require('gulp-sass');
 var browserSync=require('browser-sync').create();
 var sourcemaps=require('gulp-sourcemaps');
-var dir=".";
+var dir="./src";
 
 gulp.task('sass',function(){
   return gulp.src(dir+'/scss/style.scss')
@@ -27,7 +27,7 @@ gulp.task('serve', ['sass'], function(){
     server:dir
   });
 
-  gulp.watch([dir+'/**/scss/*.scss', '!'+dir+'/node_modules', '!'+dir+'git'],['sass']);
-  gulp.watch([dir+"/**/*.html", '!'+dir+'/node_modules', '!'+dir+'git'])
+  gulp.watch(dir+'/**/scss/*.scss',['sass']);
+  gulp.watch(dir+"/**/*.html")
     .on('change',browserSync.reload);
 })
