@@ -7,22 +7,23 @@
     list-style: none;
     overflow: hidden;
     float: right;
+    padding-left:12px;
     >li {
         float: left;
 
-        padding-left: 75px;
+        padding-left: 65px;
         &:first-child{
           padding-left: 0;
         }
         >a {
           line-height: 70px;
             text-decoration: none;
-            color: black;
+            color: grey;
             font-size: 16px;
 
         }
         >a:hover {
-            color: grey;
+            color: black;
         }
     }
 }
@@ -35,31 +36,33 @@
         color: black;
         font-weight: bold;
         font-size:18px;
-        text-transform: uppercase;
     }
     a:hover {
-        color: grey;
+        color: red;
+    }
+    span{
+      margin-left: -2px;
     }
 }
 .menu-vertical {
     display: none;
     position: absolute;
     z-index: 10;
-    background-color: rgba(255, 255, 255, 0.6);
-    padding-left: 4px;
-    padding-right: 4px;
+    background-color: white;
+    padding-left: 6px;
+    padding-right: 6px;
     padding-bottom: 6px;
     >a {
       text-decoration: none;
       padding-bottom: 4px;
         display: block;
-        font-size: 16px;
+        font-size: 14px;
         text-align: left;
         padding-top: 2px;
         color: black;
     }
     a:hover{
-      color:grey;
+      color:red;
     }
 }
 .menu-horizontal li:hover .menu-vertical {

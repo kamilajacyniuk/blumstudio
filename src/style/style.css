@@ -239,11 +239,12 @@ input[type=button] {
   list-style: none;
   overflow: hidden;
   float: right;
+  padding-left: 12px;
 }
 
 .menu-horizontal > li {
   float: left;
-  padding-left: 75px;
+  padding-left: 65px;
 }
 
 .menu-horizontal > li:first-child {
@@ -253,12 +254,12 @@ input[type=button] {
 .menu-horizontal > li > a {
   line-height: 70px;
   text-decoration: none;
-  color: black;
+  color: grey;
   font-size: 16px;
 }
 
 .menu-horizontal > li > a:hover {
-  color: grey;
+  color: black;
 }
 
 .box-left {
@@ -272,20 +273,23 @@ input[type=button] {
   color: black;
   font-weight: bold;
   font-size: 18px;
-  text-transform: uppercase;
 }
 
 .box-left a:hover {
-  color: grey;
+  color: red;
+}
+
+.box-left span {
+  margin-left: -2px;
 }
 
 .menu-vertical {
   display: none;
   position: absolute;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding-left: 4px;
-  padding-right: 4px;
+  background-color: white;
+  padding-left: 6px;
+  padding-right: 6px;
   padding-bottom: 6px;
 }
 
@@ -293,14 +297,14 @@ input[type=button] {
   text-decoration: none;
   padding-bottom: 4px;
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
   padding-top: 2px;
   color: black;
 }
 
 .menu-vertical a:hover {
-  color: grey;
+  color: red;
 }
 
 .menu-horizontal li:hover .menu-vertical {
@@ -350,25 +354,57 @@ input[type=button] {
   opacity: 0.8;
 }
 
-.image_title p {
+.image_title a {
   position: absolute;
   width: 100%;
   text-align: center;
   line-height: 266px;
   font-size: 18px;
   color: black;
+  text-decoration: none;
 }
 
-.slider-image {
+.slider {
   height: 800px;
   float: left;
   background-color: lightgrey;
+  margin-left: 36px;
+  position: relative;
+}
+
+.slider-image {
+  display: none;
+}
+
+.slider .visible {
+  display: inline-block;
 }
 
 #project-description {
   height: 800px;
   background-color: blue;
   float: right;
+  display: none;
+}
+
+#prevPicture {
+  font-size: 30px;
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+}
+
+#nextPicture {
+  font-size: 30px;
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  color: white;
 }
 
 .office-image {
@@ -380,8 +416,26 @@ input[type=button] {
 
 #office-description {
   height: 800px;
-  background-color: blue;
+  background-color: #f2f2f2;
   float: right;
+  text-align: justify;
+}
+
+#office-description p {
+  padding: 12px 12px 12px 12px;
+  color: black;
+  font-size: 14px;
+}
+
+#office-description span {
+  font-weight: bold;
+  color: red;
+}
+
+#contact {
+  padding: 150px 12px 12px 12px;
+  font-size: 14px;
+  text-align: justify;
 }
 
 * {
@@ -390,7 +444,7 @@ input[type=button] {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inconsolata', monospace;
 }
 
 .grid-container {

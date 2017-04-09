@@ -1,14 +1,37 @@
-
-
-.slider-image{
-  height: 800px;
-  float: left;
-  background-color: lightgrey;
+.slider {
+    height: 800px;
+    float: left;
+    background-color: lightgrey;
+    margin-left: 36px;
+    position: relative;
 }
-
-
-#project-description{
-  height: 800px;
-  background-color: blue;
-  float: right;
+.slider-image {
+    display: none;
+}
+.slider .visible {
+    display: inline-block;
+}
+#project-description {
+    height: 800px;
+    background-color: blue;
+    float: right;
+    display: none;
+}
+#prevPicture {
+    font-size: 30px;
+    position: absolute;
+    display: block;
+    bottom:0;
+    left: 0;
+    background-color: black;
+    color: white;
+}
+#nextPicture {
+    font-size: 30px;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: white;
 }

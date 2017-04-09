@@ -23,11 +23,12 @@
 .portfolio-image:hover .image_title {
     opacity: 0.8;
 }
-.image_title p {
+.image_title a {
     position: absolute;
     width: 100%;
     text-align: center;
     line-height: 266px;
     font-size: 18px;
     color:black;
+    text-decoration: none;
 }

@@ -1,0 +1,29 @@
+.office-image{
+  height: 800px;
+  background-color: lightgrey;
+  float: left;
+  margin-left: 36px;
+}
+
+
+#office-description{
+  height: 800px;
+  background-color: #f2f2f2;
+  float: right;
+  text-align: justify;
+  p{
+    padding: 12px 12px 12px 12px;
+    color: black;
+    font-size: 14px;
+  }
+  span{
+    font-weight: bold;
+    color: red;
+  }
+}
+
+#contact{
+padding: 150px 12px 12px 12px;
+  font-size: 14px;
+  text-align: justify;
+}
