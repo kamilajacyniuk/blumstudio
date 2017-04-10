@@ -254,12 +254,12 @@ input[type=button] {
 .menu-horizontal > li > a {
   line-height: 70px;
   text-decoration: none;
-  color: grey;
+  color: black;
   font-size: 16px;
 }
 
 .menu-horizontal > li > a:hover {
-  color: black;
+  color: red;
 }
 
 .box-left {
@@ -287,17 +287,15 @@ input[type=button] {
   display: none;
   position: absolute;
   z-index: 10;
-  background-color: white;
-  padding-left: 6px;
-  padding-right: 6px;
-  padding-bottom: 6px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 6px 6px 6px 6px;
 }
 
 .menu-vertical > a {
   text-decoration: none;
   padding-bottom: 4px;
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   padding-top: 2px;
   color: black;
@@ -388,23 +386,33 @@ input[type=button] {
 }
 
 #prevPicture {
-  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  border: 2px dotted black;
+  border-radius: 50%;
+  font-size: 40px;
   position: absolute;
   display: block;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  color: white;
+  bottom: 400px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  outline: none;
 }
 
 #nextPicture {
-  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  border: 2px dotted black;
+  border-radius: 50%;
+  font-size: 40px;
   position: absolute;
   display: block;
-  bottom: 0;
-  right: 0;
-  background-color: black;
-  color: white;
+  bottom: 400px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  outline: none;
 }
 
 .office-image {
