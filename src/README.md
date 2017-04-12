@@ -12,12 +12,16 @@ co zrobilam:
 - layout project
 - layout about
 - slider
+- mix it up filter - korekta przeskakiwania
 
 co chce jeszcze zrobic?
-- sorting projects - architecture, design
+- project description +
 - see more projects
 - rwd (responsive web design)
 
+- strzałka w góre i dół - przejdz do nastepnego projektu
+- menu vertical wolno wyjezdzające
 - po zaladowaniu strony logo sie animuje, wklepuja sie po kolei literki, albo z opacity 0 do 1
 - animacje na galerii (zoom in, zoom out)
 - jakies efekty w js (wyjezdzanie calej galerii z dolu)
+- animacja na menu

@@ -4,7 +4,7 @@
 @import "reset.scss";
 @import "global-variables.scss";
 @import "header.scss";
-@import "rows.scss";
+@import "container.scss";
 @import "portfolio-gallery.scss";
 @import "../projects/scss/style.scss";
 @import "../about/scss/style.scss";
@@ -18,11 +18,7 @@
 body {
     font-family: 'Inconsolata', monospace;
 }
-.grid-container{
-  margin: 0 auto;
-  width: 100%;
-  max-width: $grid-width;
-}
+
 
 // pętla
 $number-of-col:12;
