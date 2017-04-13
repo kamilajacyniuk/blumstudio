@@ -17,8 +17,8 @@
             <a href="index.html">blumstudio</a>
         </div>
         <ul class="col-4 menu-horizontal">
-            <li><a href="index.html" class="filter" data-filter="architecture design">projects</a></li>
-            <li><a href="#" class="filter" data-filter=".architecture">architecture</a>
+            <li><a href="#" class="filter" data-filter="all">projects</a></li>
+            <li><a href="#architecture" class="filter" data-filter=".architecture">architecture</a>
                 <div class="menu-vertical">
                     <a href="projects\house-in-bobrzany\index.html">House in Bobrzany</a>
                     <a href="projects\barbara\index.html">Barbara interiors</a>
@@ -28,7 +28,7 @@
                     <a href="projects\house-in-wolfsburg\index.html">House in Wolfsburg</a>
                 </div>
             </li>
-            <li><a href="#" class="filter" data-filter=".design">design</a>
+            <li><a href="#design" class="filter" data-filter=".design">design</a>
                 <div class="menu-vertical">
                     <a href="projects\trip-trick\index.html">Trip Trick</a>
                     <a href="projects\pool-table\index.html">Pool Table</a>
@@ -116,10 +116,29 @@
     <script src="js/mixitup.min.js"></script>
 
     <script>
+        var targetSelector = 'all';
+
+        function getSelectorFromHash() {
+            var hash = window.location.hash.replace(/^#/g, '');
+            var selector = hash ? '.' + hash : targetSelector;
+            return selector;
+        }
+
         $(document).ready(function() {
-            $('#Container').mixItUp();
+            //var mixer = $('#Container').mixItUp();
+            var mixer = mixitup('#Container', {
+                load: {
+                    filter: getSelectorFromHash() // Ensure that the mixer's initial filter matches the URL on startup
+                }
+            });
+            window.onhashchange = function() {
+                var selector = getSelectorFromHash();
+                if (selector === mixer.getState().activeFilter.selector) return; // no change
+                mixer.filter(selector);
+            };
         });
     </script>
+
 </body>
 
 </html>
