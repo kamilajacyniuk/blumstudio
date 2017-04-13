@@ -287,11 +287,14 @@ input[type=button] {
 }
 
 .menu-vertical {
-  display: none;
+  visibility: hidden;
   position: absolute;
   z-index: 10;
+  opacity: 0;
+  transform: translateY(-1em);
+  transition: all 0.3s ease-in-out;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 6px 6px 6px 6px;
+  padding: 12px 12px 12px 12px;
 }
 
 .menu-vertical > a {
@@ -300,7 +303,7 @@ input[type=button] {
   display: block;
   font-size: 16px;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   color: black;
 }
 
@@ -309,7 +312,10 @@ input[type=button] {
 }
 
 .menu-horizontal li:hover .menu-vertical {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s;
 }
 
 .container:before, .container:after {
@@ -374,14 +380,6 @@ input[type=button] {
   display: inline-block;
 }
 
-#project-description {
-  height: 800px;
-  background-color: blue;
-  display: none;
-  position: absolute;
-  right: 439px;
-}
-
 #prevPicture, #nextPicture, #project-info {
   font-family: 'Inconsolata', monospace;
   height: 60px;
@@ -407,9 +405,31 @@ input[type=button] {
 }
 
 #project-info {
-  bottom: 0;
+  bottom: -61px;
   right: 0;
-  color: red;
+  color: black;
+}
+
+.project-description {
+  height: 800px;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transform: translateX(-1em);
+  transition: all 0.3s ease-in-out;
+  right: -200px;
+  background: rgba(255, 255, 255, 0.9);
+  height: 100%;
+}
+
+#project-info:hover + .project-description {
+  visibility: visible;
+  transition: 1s;
+  opacity: 1;
+  transform: translateX(0%);
+  transition-delay: 0s, 0s, 0.3s;
+  right: 0;
 }
 
 .office-image {

@@ -9,13 +9,7 @@
 .slider .visible {
     display: inline-block;
 }
-#project-description {
-    height: 800px;
-    background-color: blue;
-    display: none;
-    position: absolute;
-    right: 439px;
-}
+
 #prevPicture, #nextPicture, #project-info {
   font-family: 'Inconsolata', monospace;
   height: 60px;
@@ -40,7 +34,28 @@ outline: none;
 }
 
 #project-info{
-  bottom: 0;
+  bottom: -61px;
   right: 0;
-  color: red;
+  color: black;
+}
+.project-description {
+    height: 800px;
+    visibility: hidden;
+    position: absolute;
+    top:0;
+    opacity: 0;
+    transform: translateX(-1em);
+    transition: all 0.3s ease-in-out;
+    right: -200px;
+    background: rgba(255, 255, 255, 0.9);
+    height: 100%;
+}
+
+#project-info:hover + .project-description {
+  visibility: visible;
+  transition: 1s;
+  opacity: 1;
+  transform: translateX(0%);
+  transition-delay: 0s, 0s, 0.3s;
+  right: 0;
 }

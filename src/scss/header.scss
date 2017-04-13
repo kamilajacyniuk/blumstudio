@@ -48,18 +48,21 @@
     }
 }
 .menu-vertical {
-    display: none;
+     visibility: hidden;
     position: absolute;
     z-index: 10;
+    opacity: 0;
+    transform: translateY(-1em);
+    transition: all 0.3s ease-in-out;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 6px 6px 6px 6px;
+    padding: 12px 12px 12px 12px;
     >a {
       text-decoration: none;
       padding-bottom: 4px;
         display: block;
         font-size: 16px;
         text-align: left;
-        padding-top: 2px;
+        padding-top: 6px;
         color: black;
     }
     a:hover{
@@ -67,5 +70,8 @@
     }
 }
 .menu-horizontal li:hover .menu-vertical {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
 }
