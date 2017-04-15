@@ -116,25 +116,31 @@
     <script src="js/mixitup.min.js"></script>
 
     <script>
-        var targetSelector = 'all';
-
-        function getSelectorFromHash() {
+        function getFilterFromHash() {
             var hash = window.location.hash.replace(/^#/g, '');
-            var selector = hash ? '.' + hash : targetSelector;
-            return selector;
+            // var filter = hash ? '.' + hash : 'all';
+            var filter = 'all';
+            if (hash !== '') {
+                filter = '.' + hash;
+            }
+            return filter;
         }
 
         $(document).ready(function() {
-            //var mixer = $('#Container').mixItUp();
-            var mixer = mixitup('#Container', {
+            //$('#Container').mixItUp();
+            var configurationOfMixitUp = {
                 load: {
-                    filter: getSelectorFromHash() // Ensure that the mixer's initial filter matches the URL on startup
+                    filter: getFilterFromHash() // Ensure that the mixer's initial filter matches the URL on startup
                 }
-            });
+            };
+            var mixer = mixitup('#Container', configurationOfMixitUp);
             window.onhashchange = function() {
-                var selector = getSelectorFromHash();
-                if (selector === mixer.getState().activeFilter.selector) return; // no change
-                mixer.filter(selector);
+                var selector = getFilterFromHash();
+                if (selector === mixer.getState().activeFilter.selector) {
+                    return; // no change
+                } else {
+                    mixer.filter(selector);
+                }
             };
         });
     </script>

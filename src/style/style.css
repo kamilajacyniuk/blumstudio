@@ -387,7 +387,7 @@ input[type=button] {
   font-size: 50px;
   position: absolute;
   display: block;
-  background-color: white;
+  background-color: transparent;
   border: none;
   outline: none;
 }
@@ -405,7 +405,7 @@ input[type=button] {
 }
 
 #project-info {
-  bottom: -61px;
+  bottom: 0;
   right: 0;
   color: black;
 }

@@ -14,9 +14,9 @@ co zrobilam:
 - slider
 - mix it up filter
 - slidedown vertical navigation
+ project description
 
 co chce jeszcze zrobic?
-- project description +
 - see more projects
 - rwd (responsive web design)
 
