@@ -1,0 +1,9 @@
+// pętla
+$number-of-col:12;
+
+@for $i from 1 through $number-of-col{
+  $size:100%*($i/$number-of-col);
+  .col-#{$i}{
+    width: ($size);
+  }
+}

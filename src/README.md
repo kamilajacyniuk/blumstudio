@@ -5,7 +5,7 @@ gulp serve
 ctrl+c - zakoncz gulp sass
 strzalka w górę - powtarza ostatnie polecenie
 
-co zrobilam:
+done:
 - html,preprocesor sass
 - grid w sassie
 - layout portfolio-gallery
@@ -14,12 +14,11 @@ co zrobilam:
 - slider
 - mix it up filter
 - slidedown vertical navigation
- project description
+- slideright project description
 
-co chce jeszcze zrobic?
+to do:
 - see more projects
 - rwd (responsive web design)
-
 - strzałka w góre i dół - przejdz do nastepnego projektu
 - po zaladowaniu strony logo sie animuje, wklepuja sie po kolei literki, albo z opacity 0 do 1
 - animacje na galerii (zoom in, zoom out)

@@ -230,6 +230,54 @@ input[type=button] {
   clear: both;
 }
 
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
 .header {
   margin: 0 auto;
   width: 100%;
@@ -387,7 +435,6 @@ input[type=button] {
   font-size: 50px;
   position: absolute;
   display: block;
-  background-color: transparent;
   border: none;
   outline: none;
 }
@@ -396,18 +443,22 @@ input[type=button] {
   left: 0;
   bottom: 400px;
   color: black;
+  background-color: white;
 }
 
 #nextPicture {
   right: 0;
   bottom: 400px;
   color: black;
+  background-color: white;
 }
 
 #project-info {
   bottom: 0;
   right: 0;
   color: black;
+  background-color: transparent;
+  z-index: 20;
 }
 
 .project-description {
@@ -421,6 +472,7 @@ input[type=button] {
   right: -200px;
   background: rgba(255, 255, 255, 0.9);
   height: 100%;
+  padding: 12px 12px 12px 12px;
 }
 
 #project-info:hover + .project-description {
@@ -457,7 +509,7 @@ input[type=button] {
 }
 
 #contact {
-  padding: 80px 24px 24px 24px;
+  padding: 24px 24px 24px 24px;
   font-size: 14px;
   text-align: justify;
 }
@@ -469,52 +521,4 @@ input[type=button] {
 
 body {
   font-family: 'Inconsolata', monospace;
-}
-
-.col-1 {
-  width: 116.75px;
-}
-
-.col-2 {
-  width: 233.5px;
-}
-
-.col-3 {
-  width: 350.25px;
-}
-
-.col-4 {
-  width: 467px;
-}
-
-.col-5 {
-  width: 583.75px;
-}
-
-.col-6 {
-  width: 700.5px;
-}
-
-.col-7 {
-  width: 817.25px;
-}
-
-.col-8 {
-  width: 934px;
-}
-
-.col-9 {
-  width: 1050.75px;
-}
-
-.col-10 {
-  width: 1167.5px;
-}
-
-.col-11 {
-  width: 1284.25px;
-}
-
-.col-12 {
-  width: 1401px;
 }

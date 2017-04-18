@@ -1,0 +1,19 @@
+//import funkcje/mixins
+
+@import "partials/reset";
+@import "partials/grid";
+@import "partials/header";
+@import "partials/container";
+@import "partials/portfolio-gallery";
+@import "../projects/sass/style.scss";
+@import "../about/sass/style.scss";
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+body {
+    font-family: 'Inconsolata', monospace;
+}

@@ -17,7 +17,6 @@
   font-size: 50px;
   position: absolute;
   display: block;
-  background-color:transparent;
 border: none;
 outline: none;
 }
@@ -25,18 +24,22 @@ outline: none;
     left: 0;
     bottom: 400px;
     color: black;
+    background-color:white;
 }
 
 #nextPicture {
     right: 0;
     bottom: 400px;
     color: black;
+    background-color:white;
 }
 
 #project-info{
   bottom: 0;
   right: 0;
   color: black;
+  background-color:transparent;
+  z-index: 20;
 }
 .project-description {
     height: 800px;
@@ -49,6 +52,7 @@ outline: none;
     right: -200px;
     background: rgba(255, 255, 255, 0.9);
     height: 100%;
+    padding: 12px 12px 12px 12px;
 }
 
 #project-info:hover + .project-description {

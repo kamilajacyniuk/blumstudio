@@ -1,0 +1,37 @@
+{
+  "name": "blumstudio",
+  "version": "1.0.0",
+  "description": "architectural office website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamilajacyniuk/blumstudio.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "jQuery",
+    "junior",
+    "front-end",
+    "developer"
+  ],
+  "author": "Kamila Jacyniuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamilajacyniuk/blumstudio/issues"
+  },
+  "homepage": "https://github.com/kamilajacyniuk/blumstudio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
+  },
+  "dependencies": {
+    "del": "^2.2.2"
+  }
+}
