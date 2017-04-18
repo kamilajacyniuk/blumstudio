@@ -1,3 +1,5 @@
-language: node
+language: node_js
 script: ./build-travis.sh
 install: true
+node_js:
+  - "6"
