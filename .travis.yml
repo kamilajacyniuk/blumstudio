@@ -1,0 +1,3 @@
+language: node
+script: ./build-travis.sh
+install: true
