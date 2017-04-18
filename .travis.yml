@@ -4,4 +4,4 @@ install: true
 node_js:
   - "6"
 before_script:
-  - npm install gulp
+  - npm install gulp gulp-sass browser-sync gulp-sourcemaps del
