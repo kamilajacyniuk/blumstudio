@@ -7,3 +7,14 @@ $number-of-col:12;
     width: ($size);
   }
 }
+
+@media (max-width:467px){
+  .col-4{
+    width: 100%;
+  }
+}
+@media(min-width:467px)and(max-width:936px){
+  .col-4{
+    width: 50%;
+  }
+}

@@ -1,65 +1,70 @@
-.container{
-  position: relative;
-  height: 800px;
+.container {
+    position: relative;
+    height: 800px;
 }
-
 .slider-image {
     display: none;
 }
 .slider .visible {
     display: inline-block;
 }
-
-#prevPicture, #nextPicture, #project-info {
-  font-family: 'Inconsolata', monospace;
-  height: 60px;
-  width: 60px;
-  font-size: 50px;
-  position: absolute;
-  display: block;
-border: none;
-outline: none;
+%button {
+    font-family: 'Inconsolata', monospace;
+    height: 60px;
+    width: 60px;
+    font-size: 50px;
+    position: absolute;
+    display: block;
+    border: none;
+    border-radius: 50%;
+    outline: none;
 }
 #prevPicture {
-    left: 0;
+    @extend %button;
+    left: 15px;
     bottom: 400px;
     color: black;
-    background-color:white;
+    background-color: white;
+    &:hover{
+      background-color: transparent;
+    }
 }
-
 #nextPicture {
-    right: 0;
+    @extend %button;
+    right: 15px;;
     bottom: 400px;
     color: black;
-    background-color:white;
+    background-color: white;
+    &:hover{
+      background-color: transparent;
+    }
 }
-
-#project-info{
-  bottom: 0;
-  right: 0;
-  color: black;
-  background-color:transparent;
-  z-index: 20;
+#project-info {
+    @extend %button;
+    bottom: 0;
+    right: 0;
+    color: black;
+    background-color: transparent;
+    z-index: 20;
+    &:hover + .project-description {
+        visibility: visible;
+        transition: 1s;
+        opacity: 1;
+        transform: translateX(0%);
+        transition-delay: 0s, 0s, 0.3s;
+        right: 0;
+    }
 }
 .project-description {
     height: 800px;
     visibility: hidden;
     position: absolute;
-    top:0;
+    top: 0;
     opacity: 0;
     transform: translateX(-1em);
     transition: all 0.3s ease-in-out;
     right: -200px;
     background: rgba(255, 255, 255, 0.9);
     height: 100%;
-    padding: 12px 12px 12px 12px;
-}
-
-#project-info:hover + .project-description {
-  visibility: visible;
-  transition: 1s;
-  opacity: 1;
-  transform: translateX(0%);
-  transition-delay: 0s, 0s, 0.3s;
-  right: 0;
+    padding: 12px;
 }
