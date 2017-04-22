@@ -25,3 +25,12 @@ function getFilterFromHash() {
 							}
 					};
 			});
+
+			function myFunction() {
+			    var x = document.getElementById("menuResponsive");
+			    if (x.className === "col-4 menu-horizontal") {
+			        x.className += " responsive";
+			    } else {
+			        x.className = "col-4 menu-horizontal";
+			    }
+			}
