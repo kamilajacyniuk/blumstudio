@@ -24,3 +24,4 @@ to do:
 - animacje na galerii (zoom in, zoom out)
 - jakies efekty w js (wyjezdzanie calej galerii z dolu)
 - animacja na menu
+- w sliderze - pasek postępu zdjec
