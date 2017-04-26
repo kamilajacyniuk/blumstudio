@@ -2,6 +2,7 @@
 
 @import "partials/reset";
 @import "partials/grid";
+@import "partials/variables";
 @import "partials/header";
 @import "partials/container";
 @import "partials/portfolio-gallery";
@@ -14,5 +15,5 @@
 }
 body {
     font-family: 'Inconsolata', monospace;
-    padding: 10px;
+    padding: 0 10px 0 10px;;
 }

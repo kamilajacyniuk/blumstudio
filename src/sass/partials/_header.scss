@@ -1,4 +1,5 @@
 .header {
+
     margin: 0 auto;
     width: 100%;
     max-width: 1401px;
@@ -7,7 +8,6 @@
 .menu-horizontal {
     display: block;
     list-style: none;
-    // overflow: hidden;
     float: right;
     padding-left: 12px;
     > li {
@@ -22,7 +22,8 @@
             color: black;
             font-size: 16px;
             &:hover {
-                color: red;
+                color: $hover-text;
+                font-weight: bold;
             }
         }
     }
@@ -38,7 +39,7 @@
         font-size: 18px;
     }
     a:hover {
-        color: red;
+        color: $hover-text;
     }
 }
 .menu-vertical {
@@ -61,7 +62,8 @@
         color: black;
     }
     a:hover {
-        color: red;
+        color: $hover-text;
+        font-weight: bold;
     }
 }
 .menu-horizontal li:hover .menu-vertical {
@@ -73,7 +75,6 @@
 .icon {
     display: none;
 }
-
 @media screen and (max-width:920px) {
     .header {
         position: relative;
@@ -108,36 +109,57 @@
         text-align: center;
         padding: 0;
     }
-    .box-left{
-      margin-left: 20px;
+    .box-left {
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width:467px) and (max-width:920px) {
+    .menu-horizontal.responsive {
+        width: 50%;
+        position: absolute;
+        right: 0;
+        // li {
+        //     width: 100%;
+        //     padding: 0;
+        //     margin: 0;
+        //     // border: 1px solid black;
+        // }
+        .menu-vertical {
+            position: absolute;
+            background-color: blue;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            a {
+                text-align: center;
+                line-height: 35px;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
     }
 }
 
-@media screen and (min-width:467px) and (max-width:920px){
-  .menu-horizontal.responsive {
-    width: 50%;
-    position: absolute;
-    right: 0;
-    li {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    // border: 1px solid black;
-  }
-  .menu-vertical{
-    position: absolute;
-    background-color: red;
-    width: 100%;
-margin: 0;
-padding: 0;
+@media screen and (max-width:467px) {
+    .menu-horizontal.responsive {
+        width: 100%;
+        position: absolute;
+        right: 0;
 
-a{
-  text-align: center;
-  line-height: 35px;
-  &:hover{
-    color: white;
-  }
-}
-  }
-}
+        .menu-vertical {
+            position: absolute;
+            background-color: blue;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            a {
+                text-align: center;
+                line-height: 35px;
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
 }

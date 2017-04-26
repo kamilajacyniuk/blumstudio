@@ -1,9 +1,7 @@
 .portfolio-image {
-    float: left;
-    display: block;
-    overflow: hidden;
+    flex: auto;
     position: relative;
-    // border: 3px solid white;
+    margin-bottom: -3px;
 }
 .portfolio-image img:hover {
     opacity: 0.6;
@@ -11,14 +9,13 @@
 
 .image_title {
     position: absolute;
-    background: white;
+    background: blue;
     height: 100%;
     bottom: 0;
     width: 100%;
     transition: .5s ease;
     opacity: 0;
     a {
-      display: block;
         position: absolute;
         width: 100%;
         text-align: center;
@@ -29,5 +26,8 @@
     }
 }
 .portfolio-image:hover .image_title {
-    opacity: 0.8;
+    opacity: 0.7;
+    a{
+      color: white;
+    }
 }
