@@ -278,13 +278,13 @@ input[type=button] {
   width: 100%;
 }
 
-@media (max-width: 467px) {
+@media (max-width: 768px) {
   .col-4 {
     width: 100%;
   }
 }
 
-@media (min-width: 467px) and (max-width: 920px) {
+@media (min-width: 768px) and (max-width: 920px) {
   .col-4 {
     width: 50%;
   }
@@ -349,7 +349,7 @@ input[type=button] {
   opacity: 0;
   transform: translateY(-1em);
   transition: all 0.3s ease-in-out;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 12px;
   margin-left: -12px;
 }
@@ -479,7 +479,7 @@ input[type=button] {
 .portfolio-image {
   flex: auto;
   position: relative;
-  margin-bottom: -3px;
+  margin-bottom: -4px;
 }
 
 .portfolio-image img:hover {
@@ -497,13 +497,18 @@ input[type=button] {
 }
 
 .image_title a {
+  display: block;
   position: absolute;
   width: 100%;
   text-align: center;
-  top: 50%;
   font-size: 18px;
   color: black;
   text-decoration: none;
+  top: 50%;
+}
+
+img {
+  width: 100%;
 }
 
 .portfolio-image:hover .image_title {
@@ -539,23 +544,24 @@ input[type=button] {
 }
 
 #prevPicture {
-  left: 15px;
-  bottom: 50%;
+  left: -50px;
+  bottom: 45%;
   color: black;
   background-color: rgba(255, 255, 255, 0.6);
 }
 
 #nextPicture {
-  right: 15px;
-  bottom: 50%;
+  right: -50px;
+  bottom: 45%;
   color: black;
   background-color: rgba(255, 255, 255, 0.5);
+  z-index: 100;
 }
 
 #project-info {
   bottom: 0;
-  right: 0;
-  color: black;
+  right: -50px;
+  color: blue;
   background-color: transparent;
   z-index: 20;
 }
@@ -580,37 +586,39 @@ input[type=button] {
   right: -200px;
   background: rgba(255, 255, 255, 0.9);
   height: 100%;
-  padding: 12px;
+  padding: 24px;
   margin-top: 70px;
 }
 
-.office-image {
-  height: 800px;
-  float: left;
+.project-description h1 {
+  font-weight: bold;
+  padding-bottom: 24px;
 }
 
-#office-description {
-  height: 800px;
+.office {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.office-image {
+  flex: auto;
+}
+
+.office-description {
+  flex: auto;
   background-color: #f2f2f2;
-  float: right;
   text-align: justify;
 }
 
-#office-description p {
+.office-description p {
   padding: 24px 24px 24px 24px;
   color: black;
   font-size: 14px;
 }
 
-#office-description span {
+.office-description span {
   font-weight: bold;
-  color: red;
-}
-
-#contact {
-  padding: 24px 24px 24px 24px;
-  font-size: 14px;
-  text-align: justify;
+  color: blue;
 }
 
 * {
