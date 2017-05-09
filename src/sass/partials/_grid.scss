@@ -8,12 +8,12 @@ $number-of-col:12;
   }
 }
 
-@media (max-width:467px){
+@media (max-width:768px){
   .col-4{
     width: 100%;
   }
 }
-@media(min-width:467px)and(max-width:920px){
+@media(min-width:768px)and(max-width:920px){
   .col-4{
     width: 50%;
   }

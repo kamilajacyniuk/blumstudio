@@ -7,68 +7,70 @@
     <title>blumstudio</title>
     <link rel="stylesheet" href="../style/main.css">
     <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <script src='../js/header.js'></script>
+    <script src='../js/app.js'></script>
 </head>
 
 <body>
     <div class="container">
         <div class="header">
             <div class="box-left">
-                <a href="../index.html">blumstudio</a>
+                <a href="../../index.html">blumstudio</a>
             </div>
-            <ul class="menu-horizontal">
-                <li><a href="../index.html">projects</a></li>
-                <li><a href="../index.html#architecture">architecture</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction(className)">&#9776;</a>
+            <ul class="menu-horizontal" id="menuResponsive">
+                <li><a href="../../index.html" class="filter" data-filter="all">projects</a></li>
+                <li><a href="../../index.html#architecture" class="filter" data-filter=".architecture">architecture</a>
                     <div class="menu-vertical">
-                        <a href="../projects\house-in-bobrzany/index.html">House in Bobrzany</a>
+                        <a href="../projects/house-in-bobrzany/index.html">House in Bobrzany</a>
                         <a href="../projects/barbara/index.html">Barbara interiors</a>
-                        <a href="projects\house-in-mountains\index.html">House in mountains</a>
-                        <a href="projects\garnizon-kultury\index.html">Garnizon Kultury</a>
-                        <a href="projects\black-white-apartment\index.html">Black &amp; White Apartment</a>
-                        <a href="projects\house-in-wolfsburg\index.html">House in Wolfsburg</a>
+                        <a href="../projects/house-in-mountains/index.html">House in mountains</a>
+                        <a href="../projects/garnizon-kultury/index.html">Garnizon Kultury</a>
+                        <a href="../projects/black-white-apartment/index.html">Black &amp; White Apartment</a>
+                        <a href="../projects/house-in-wolfsburg/index.html">House in Wolfsburg</a>
                     </div>
                 </li>
-                <li><a href="../index.html#design">design</a>
-                    <div class="menu-vertical">
-                        <a href="projects\trip-trick\index.html">Trip Trick</a>
-                        <a href="projects\pool-table\index.html">Pool Table</a>
-                        <a href="projects\uwd\index.html">Unique Wood Design</a>
+                <li><a href="../../index.html#design" class="filter" data-filter=".design">design</a>
+                    <div class="menu-vertical" id="menuVertical">
+                        <a href="../projects/trip-trick/index.html">Trip Trick</a>
+                        <a href="../projects/pool-table/index.html">Pool Table</a>
+                        <a href="../projects/uwd/index.html">Unique Wood Design</a>
                     </div>
                 </li>
-                <li><a href="index.html">about</a></li>
+                <li><a href="about/index.html">about</a></li>
             </ul>
         </div>
-        <div class="col-8 office-image"><img src="images\about.jpg" alt="" />
-        </div>
-        <div class="col-4" id="office-description">
-            <p>
-                <span>Blumstudio</span> is an office offering architectural, urban planning, interior design and design services. We strive to create high
-                quality architecture, trying not to undergo temporary mods. We design modern and functional architecture, embedded in the context of place
-                and economic realities. It is important for us to have a close relationship with the investor, which makes it easier for us to meet the
-                client's ideas, needs and dreams.
-                <br><span>Architecture:</span> urban plots analysis, building inventories, conceptual projects, full architectural and building documentation
-                of buildings (single family and multi-family, service and office buildings) together with land development and industry projects, adaptation
-                of existing projects, extension and modernization of existing buildings, Official documentation, author's supervision
-                <br><span>Interiors:</span> individual projects of private and commercial interiors, conceptual designs, 3d visualizations, full executive
-                documentation, selection of finishing and interior furnishings, lighting projects, individual projects of furniture, consultancy and consultancy
-                <br><span>Graphics:</span> visualizations, usable graphics, corporate visual identity, visual information system of objects, graphic design
-                of mobile applications
-            </p>
-            <p>
-                The owner of the office is Kamila Jacyniuk - a graduate of the Faculty of Architecture and Urban Planning at the Wrocław University of Technology (2009),
-                studied at the École Nationale Supérieure d'Architecture de Nantes in France in 1 year Erasmus Scholarschip. She has gained professional
-                experience since 2008 in a renowned architectural studio in Wroclaw. Since 2010 she runs her own design studio. Member of the Lower Silesian
-                Chamber of Architects - Building Permits in Architectural Design for Unrestricted Design No. 04 / DSOKK / 2014. She also completed Advertising
-                Studies in Wrocław, gaining experience in graphic design.
-            </p>
-            <div id="contact">
-                <span>blumstudio</span> | pracownia projektowa | Kamila Jacyniuk
-                <br>ul. Jednosci Narodowej 91/5 50-301 Wrocław
-                <br>+48 693 715 516 info@blumstudio.pl
+        <div class="office">
+            <div class="col-8 office-image"><img src="images\about.jpg" alt="" />
             </div>
-
+            <div class="col-4 office-description">
+                <p>
+                    <span>Blumstudio</span> is an office offering architectural, urban planning, interior design and design services. We strive to create
+                    high quality architecture, trying not to undergo temporary mods. We design modern and functional architecture, embedded in the context
+                    of place and economic realities. It is important for us to have a close relationship with the investor, which makes it easier for us
+                    to meet the client's ideas, needs and dreams.
+                    <br></br><span>Architecture:</span> urban plots analysis, building inventories, conceptual projects, full architectural and building documentation
+                    of buildings (single family and multi-family, service and office buildings) together with land development and industry projects, adaptation
+                    of existing projects, extension and modernization of existing buildings, Official documentation, author's supervision
+                    <br></br><span>Interiors:</span> individual projects of private and commercial interiors, conceptual designs, 3d visualizations, full executive
+                    documentation, selection of finishing and interior furnishings, lighting projects, individual projects of furniture, consultancy and
+                    consultancy
+                    <br></br><span>Graphics:</span> visualizations, usable graphics, corporate visual identity, visual information system of objects, graphic
+                    design of mobile applications
+                    <br></br>
+                    The owner of the office is Kamila Jacyniuk - a graduate of the Faculty of Architecture and Urban Planning at the Wrocław University of Technology (2009),
+                    studied at the École Nationale Supérieure d'Architecture de Nantes in France in 1 year Erasmus Scholarschip. She has gained professional
+                    experience since 2008 in a renowned architectural studio in Wroclaw. Since 2010 she runs her own design studio. Member of the Lower
+                    Silesian Chamber of Architects - Building Permits in Architectural Design for Unrestricted Design No. 04 / DSOKK / 2014. She also completed
+                    Advertising Studies in Wrocław, gaining experience in graphic design.
+                    <br></br>
+                    <span>Blumstudio</span> | pracownia projektowa | Kamila Jacyniuk
+                    <br>ul. Jednosci Narodowej 91/5 50-301 Wrocław
+                    <br>+48 693 715 516 info@blumstudio.pl
+                </p>
+            </div>
         </div>
     </div>
-
 </body>
 
 </html>
